@@ -47,6 +47,10 @@ plugins:
 1. 使用本地路径：在`hexo/source`目录下新建一个`img`文件夹，将图片放入该文件夹下，插入图片时链接即为`/img/图片名称`。
 2. 使用*微博图床*，地址<http://weibotuchuang.sinaapp.com/>，将图片拖入区域中，会生成图片的URL，这就是链接地址。
 
+###加入「fork me on github」
+
+[这里](https://github.com/blog/273-github-ribbons)有 github 给出的教程，把代码插入到任意一个全局的模板文件中就行，比如`layout.ejs`的末尾。
+
 ###bug:「warning: LF will be replaced by CRLF」
 
 在`hexo deploy`时，有时会出现这个提示信息`warning: LF will be replaced by CRLF`，虽然看起来挺乱糟糟的，但不影响使用，可以忽略不计。若想不提示，可以使用如下方法：
