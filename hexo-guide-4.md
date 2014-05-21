@@ -19,6 +19,30 @@ hexo默认使用国外比较流行的disqus，不过，按照“因地制宜”�
 <% } %>
 ```
 
+*很多网友反映自己使用的非 light 主题中找不到相应的文件。我的这些修改都是在 light主题中，其他主题没有了解过，各位只好自己探索了。*
+
+###添加『页面导航』
+
+在刚才添加「多说」评论的文件中，加入一段代码，如下：
+
+```html
+<% if ( page.comments){ %>
+
+ <nav id="pagination" >
+    <% if (page.prev) { %>
+    <a href="<%- config.root %><%- page.prev.path %>" class="alignleft prev" ><%= __('prev') %></a>
+    <% } %>
+    <% if (page.next) { %>
+    <a href="<%- config.root %><%- page.next.path %>" class="alignright next" ><%= __('next') %></a>
+    <% } %>
+    <div class="clearfix"></div>
+</nav>
+
+<section id="comment">
+
+```
+
+
 ###添加“百度分享”
 
 到[百度分享](http://share.baidu.com/code)获得代码，在`themes/light/layout/_partial/article.ejs`中，将`<%-partial('post/share')%>`删掉，替换为百度分享的代码。

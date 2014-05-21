@@ -51,6 +51,7 @@ plugins:
 
 [这里](https://github.com/blog/273-github-ribbons)有 github 给出的教程，把代码插入到任意一个全局的模板文件中就行，比如`layout.ejs`的末尾。
 
+
 ###bug:「warning: LF will be replaced by CRLF」
 
 在`hexo deploy`时，有时会出现这个提示信息`warning: LF will be replaced by CRLF`，虽然看起来挺乱糟糟的，但不影响使用，可以忽略不计。若想不提示，可以使用如下方法：
@@ -74,6 +75,10 @@ plugins:
 点击搜索后进入的google页面，搜索框里面是不是显示「site:yoursite.com」，这说明有个地方没有设置，请随我来：
 
 打开根目录下的config文件，第15行，`url:`，自觉填上吧。
+
+###bug:代码块中不显示行号
+
+hexo 的作者已经提示过了，使用四个空格的方式标志代码块的确没行号，需要行号的要使用反引号的方式。
 
 ###文件结构
 
